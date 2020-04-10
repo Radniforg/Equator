@@ -14,8 +14,10 @@ try:
       arithmetic = int(sequence_processed[1]) * int(sequence_processed[2])
     else:
       arithmetic = int(sequence_processed[1]) / int(sequence_processed[2])
+  else:
+    arithmetic = 'Ошибка ввода: задано отрицательное число'
 except ValueError:
-  arithmetic = 'Ошибка ввода: задано не положительное число'
+  arithmetic = 'Ошибка ввода: задано не число'
 except ZeroDivisionError:
   arithmetic = 'Внимание: деление на ноль!'
 except Exception:
